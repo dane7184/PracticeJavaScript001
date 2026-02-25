@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partice Java Script</title>
+    <style>
+        div{
+            text-align: center;
+            justify-content: center;
+            width: 400px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 5%;
+            margin: 100px;
+        }
+        .phone{
+            padding: 20px;
+            height: 50px;
+        }
+        .btn{
+            
+            color: brown;
+            width: 50px;
+            border-radius: 20%;
+            background-color: cornflowerblue;
+            padding: 8px;
+            margin: 5px;
+        }
+        label{
+            font-size: large;
+            font-family: serif;
+
+        }
+        input{
+            border: 1 solid red;
+            width: 150px;
+        }
+        h2{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <label>Phone Number</label>
+        <input type="text" id="phoneInput">
+        <mark>012-345-6789</mark>
+        <br>
+        <button onclick="checkPhone()">Check</button>
+        <br><br>
+    </div>
+
+    <div>
+        <h2 id="display">00/00/0000,00:00:00 M</h2>
+
+        <button class="btn" onclick="startClock()">Start</button>
+        <button class="btn" onclick="stopClock()">Stop</button>
+        <button class="btn" onclick="resetClock()">Reset</button>
+    </div>
+
+   
+    <script src="index.js"></script>
+</body>
+</html>
+
+
